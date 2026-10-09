@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Persoonlijke portfolio website - projecten, over mij en contact." />
+  <title>Mijn Portfolio | Ammar </title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="header">
+    <nav class="nav container">
+      <a href="#" class="logo">Mijn<span>Portfolio</span></a>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu openen" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="active">Home</a></li>
+        <li><a href="#over">Over mij</a></li>
+        <li><a href="#projecten">Projecten</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <p class="intro">Hallo, ik ben Ammar </p>
+        <h1>Ammar Qadri</h1>
+        <h2 class="subtitle"><span id="typewriter"></span><span class="cursor">|</span></h2>
+        <p class="description">
+          software developer in opleiding. Ik bouw websites met HTML, CSS en JavaScript.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projecten" class="btn btn-primary">Bekijk projecten</a>
+          <a href="#contact" class="btn btn-secondary">Neem contact op</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <img src="images/profielfoto.jpg" alt="Profielfoto van Voornaam Achternaam" />
+      </div>
+    </section>
+
+    <section id="over" class="section container">
+      <h2>Over mij</h2>
+      <p>
+        ik zit op mbo utrecht in mijn 1ste jaar ik leer hoe ik websites maak en hoe ik werk met html css en python.
+      </p>
+      <ul class="about-list">
+        <li><strong>Naam:</strong> Ammar</li>
+        <li><strong>Opleiding:</strong> software developer</li>
+        <li><strong>Focus:</strong> goede websites maken met behulp van html.</li>
+      </ul>
+    </section>
+
+    <section id="projecten" class="section container">
+      <h2>Projecten</h2>
+      <div class="projects-grid">
+        <article class="project-card">
+          <h3>Project 1 - Persoonlijke website</h3>
+          <p>Mijn eerste responsive website met HTML en CSS.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 2 - To-do app</h3>
+          <p>Interactieve to-do lijst met JavaScript.</p>
+        </article>
+        <article class="project-card">
+          <h3>Project 3 - Rekenmachine</h3>
+          <p>Eenvoudige calculator met DOM-manipulatie.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <p>Heb je een vraag? Stuur me een bericht!</p>
+      <form id="contactForm" class="contact-form" novalidate>
+        <label for="name">Naam</label>
+        <input type="text" id="name" name="name" placeholder="Je naam" required />
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email" placeholder="je@email.nl" required />
+
+        <label for="message">Bericht</label>
+        <textarea id="message" name="message" rows="5" placeholder="Typ je bericht..." required></textarea>
+
+        <button type="submit" class="btn btn-primary">Verstuur</button>
+        <p id="formMessage" class="form-message" role="status"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>&copy; <span id="year"></span> Voornaam Achternaam. Alle rechten voorbehouden.</p>
+      <button id="backToTop" class="back-to-top" aria-label="Terug naar boven">↑</button>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
